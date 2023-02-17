@@ -1,3 +1,4 @@
+//program to subtract a constant from alterante column elements of the matrix
 #include<stdio.h>
 main(){
 	int m,n;
