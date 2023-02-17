@@ -1,3 +1,4 @@
+//program to check if the elements of a matrix are prime or not
 #include<stdio.h>
 main(){
 	int m,n,k;
