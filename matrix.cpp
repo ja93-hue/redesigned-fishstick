@@ -1,3 +1,4 @@
+//program to check if a number exists in the matrix
 #include<stdio.h>
 main(){
 	
