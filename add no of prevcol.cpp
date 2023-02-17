@@ -1,3 +1,4 @@
+//program to add previous column elements to alternate column elements
 #include<stdio.h>
 main(){
 	int r,c,i,j;
