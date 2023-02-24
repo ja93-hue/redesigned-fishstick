@@ -1,11 +1,13 @@
-#include<stdio.h>
+//program to find if number is prime or not using user defined function
+#include<stdio.h>    //function declaration
 void prime(int);
 main(){
 	int num;
+	printf("enter the number:\n ");
 	scanf("%d",&num);
-	prime(num);
+	prime(num);     //calling the function ; transfers the variable "num" to the function defination
 }
-void prime(int a)
+void prime(int a)          //function defination
 {
 	int i,count=0;
 	for(i=1;i<a;i++)
