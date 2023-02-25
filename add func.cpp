@@ -1,4 +1,4 @@
-//program to add two numbers using function
+//program to add two numbers using user defined function
 #include<stdio.h>
 int add(int,int);
 main()
