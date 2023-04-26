@@ -54,7 +54,7 @@ void bubble(int n,int arr[])
 }
 int bin_search(int a[],int x, int low,int high,int *p)
 {
-    while(low!=high)
+    while(low<=high)
 	{
 		int mid = (low + high)/2;
 		if(x==a[mid])
