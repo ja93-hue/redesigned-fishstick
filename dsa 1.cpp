@@ -18,20 +18,24 @@ main()
 	{
 		printf("%d\t",a[i]);
 	}
-	printf("\nsorted array:\t");
 	bubble(n,a);
+	printf("\nsorted array:\t");
 	for(i=0;i<n;i++)
 	{
 		printf("%d\t",a[i]);
 	}
-	printf("\nenter target element for binary search:");
-	scanf("%d",&num);
-	int j= bin_search(a,num,0,n-1,&flag);
-	if(flag==0)
-	printf("\n%d is found at position %d of the sorted array",num,j+1);
-	else
-    printf("\nelement does not belong in the array");
-	
+	while(1)
+	{
+		printf("\nenter target element for binary search:");
+    	scanf("%d",&num);
+	    int j= bin_search(a,num,0,n-1,&flag);
+	    if(flag==0)
+	    printf("\n%d is found at position %d of the sorted array",num,j+1);
+	    else
+        printf("\nelement does not belong in the array");
+        flag==0;
+	}
+	   	
 }
 void swap(int *a,int *b)
 {
@@ -49,6 +53,11 @@ void bubble(int n,int arr[])
 		{
 			if(arr[j]>arr[j+1])
 			swap(&arr[j],&arr[j+1]);
+		}
+		printf("\nPASS %d:\t",j+1);
+		for(int k=0;k<n;k++)
+		{
+			printf("%d\t",arr[k]);
 		}
 	}
 }
